@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:petals_coderpen/services/authentication.dart';
+import 'package:petals_coderpen/pages/login/root_page.dart';
 
-import 'login_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.pink,
       ),
-      home: LoginPage(),
+      home: new RootPage(auth: new Auth()),
     );
   }
 }
